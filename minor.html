@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #maindiv{
+            display:flex ;
+           
+        }
+        #div1{
+            width: 300px;
+            height: 350px;
+            border: 1px solid;
+            padding: 8px;
+            background-color: black;
+            border-radius: 30px;
+            margin-right:50px ;
+        }
+        input{
+            padding: 10px;
+            padding-right: 100px;
+            margin: 5px;
+            border-radius: 10px;
+            background-color: rgb(244, 230, 230);
+    
+        }
+        button{
+            padding:10px 60px 10px 60px;
+            margin: 5px;
+            border-radius: 10px;
+            background-color:rgb(130, 212, 245);
+            color: white;
+            font-size: 15px;
+            
+        }
+        button:hover{
+            background-color: rgb(83, 190, 232);
+            font-size: 17px;
+        }
+        h1{
+            color: white;
+        }
+        #div2{
+            margin-top: 50px;
+            width:230px;
+            height: 250px;
+            border:2px solid;
+            border-radius: 20px;
+            text-align: center;
+        }
+        h2{
+           margin: 10px 0px 0px 0px ;
+        }
+        img{
+            padding: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div id="maindiv">
+    <div id="div1">
+        <h1>QR code generator</h1>
+        <input type="text" placeholder="Enter your name"id="name" ><br>
+        <button onclick="generateQR()"><b>Generate QR code</b></button>
+        <button onclick="removeQR()" id="button">Remove QR code</button>
+    </div>
+
+    <div id="div2">
+        <h2>Your QR code</h2>
+        <img src="" id="qrimage">
+    </div>
+
+
+
+
+
+
+</div>
+</body>
+</html>
+<script>
+    const div1=document.getElementById('div1')
+    const name=document.getElementById('name')
+    const qrbutton=document.getElementById('qrbutton')
+    const qrimage=document.getElementById('qrimage')
+    const div2=document.getElementById('div2')
+   
+    function generateQR(){
+        if(name.value=='minakshi'||name.value=='b'||name.value=='c'){
+       qrimage.src= "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data="+name.value;
+        }
+        else{
+            alert('invalid detail')
+        }
+    }
+    function removeQR(){
+        const remove=document.querySelector('button')
+        qrimage.remove()
+        name.value.remove()
+    }
+   
+    
+   
+    
+   
+   </script>
