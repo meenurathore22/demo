@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="h1"></h1>
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+    <div id="box4"></div>
+    <div id="box5"></div>
+
+</body>
+</html>
+<script>
+//heading
+    const heading=document.getElementById('h1')
+    console.log(heading)
+    heading.innerText='Bollywood Stars'
+    heading.style.textAlign='center'
+
+
+//for div1
+    const div1=document.getElementById('box1')
+    console.log(div1)
+    div1.style.width='500px'
+    div1.style.height='500px'
+    div1.style.border='2px solid'
+    
+
+    //image1
+    const image1=document.createElement('img')
+    console.log(image1)
+    image1.src='https://assets.vogue.in/photos/607968240b2bcf72ead1c1ef/2:3/w_2560%2Cc_limit/Alia%2520Bhatt%2520in%2520RRR.jpeg'
+    image1.style.width='250px'
+    image1.style.height='250px'
+    image1.style.paddingLeft='115px'
+
+    //head1
+    const head1=document.createElement('h2')
+    console.log(head1)
+    head1.innerText='Alia Bhatt'
+    head1.style.fontSize='30px'
+    head1.style.paddingLeft='150px'
+
+    //para1
+    const para1=document.createElement('p')
+    console.log(para1)
+    para1.innerText='Alia Bhatt was born on 15 March 1993[3][4] in India.[5][6] She was born into the Bhatt family[7] to Indian film director Mahesh Bhatt and British actress Soni Razdan. Her father is of Gujarati descent[8][9] and her mother is of Kashmiri Pandit and British German ancestry.'
+
+   
+    div1.append(image1,head1,para1)
+
+
+//div2
+
+    const div2=document.getElementById('box2')
+    console.log(div2)
+    div2.style.width='500px'
+    div2.style.height='500px'
+    div2.style.border='2px solid'
+
+    //image2
+    const image2=document.createElement('img')
+    console.log(image2)
+    image2.src="https://assets.vogue.in/photos/5d315f50adb0590008596be4/2:3/w_2560%2Cc_limit/Priyanka-Chopra-Chris-Craymer.jpg"
+    image2.style.width='250px'
+    image2.style.height='250px'
+    image2.style.paddingLeft='115px'
+
+    //head2
+    const head2=document.createElement('h2')
+    console.log(head2)
+    head2.innerText='Priyanka Chopra'
+    head2.style.fontSize='30px'
+    head2.style.paddingLeft='120px'
+
+    //para2
+    const para2=document.createElement('p')
+    console.log(para2)
+    para2.innerText='Chopra was born on 18 July 1982 in Jamshedpur, Bihar (present-day Jharkhand), to Ashok and Madhu Chopra, both physicians in the Indian Army.[2][3] Her father was a Punjabi Hindu from Ambala.'
+
+
+div2.append(image2,head2,para2)
+
+//div3
+
+    const div3=document.getElementById('box3')
+    console.log(div3)
+    div3.style.width='500px'
+    div3.style.height='500px'
+    div3.style.border='2px solid'
+
+    //image3
+    const image3=document.createElement('img')
+    console.log(image3)
+    image3.src="https://img.mensxp.com/media/content/2021/Jun/Bollywood-Actors-Debut-OTT-20211200_60c7528fbcfa9.jpeg"
+    image3.style.width='250px'
+    image3.style.height='250px'
+    image3.style.paddingLeft='115px'
+
+    //head3
+    const head3=document.createElement('h2')
+    console.log(head3)
+    head3.innerText='Shahid Kapoor'
+    head3.style.fontSize='30px'
+    head3.style.paddingLeft='140px'
+  
+    //para3
+    const para3=document.createElement('p')
+    console.log(para3)
+    para3.innerText='Shahid Kapoor is an Indian actor who appears in Hindi films. Initially recognised for portraying romantic roles, he has since taken on parts in action films and thrillers, and is the recipient of several awards, including three Filmfare Awards'
+
+
+div3.append(image3,head3,para3)
+
+//for div4
+const div4=document.getElementById('box4')
+console.log(div4)
+div4.style.width='500px'
+div4.style.height='500px'
+div4.style.border='2px solid'
+
+
+//image4
+const image4=document.createElement('img')
+console.log(image4)
+image4.src='https://st1.bollywoodlife.com/wp-content/uploads/2023/02/4-236.png?impolicy=Medium_Widthonly&w=400&h=711'
+image4.style.width='250px'
+image4.style.height='250px'
+image4.style.paddingLeft='115px'
+
+//head4
+const head4=document.createElement('h2')
+console.log(head4)
+head4.innerText='Deepika Padukon'
+head4.style.fontSize='30px'
+head4.style.paddingLeft='150px'
+
+//para4
+const para4=document.createElement('p')
+console.log(para4)
+para4.innerText='Deepika Padukon was born on 15 March 1993[3][4] in India.[5][6] She was born into the Bhatt family[7] to Indian film director Mahesh Bhatt and British actress Soni Razdan. Her father is of Gujarati descent[8][9] and her mother is of Kashmiri Pandit and British German ancestry.'
+
+
+div4.append(image4,head4,para4)
+
+
+//for div5
+const div5=document.getElementById('box5')
+console.log(div5)
+div5.style.width='500px'
+div5.style.height='500px'
+div5.style.border='2px solid'
+
+
+//image5
+const image5=document.createElement('img')
+console.log(image5)
+image5.src='https://static.javatpoint.com/top10-technologies/images/top-10-bollywood-actors8.jpg'
+image5.style.width='250px'
+image5.style.height='250px'
+image5.style.paddingLeft='115px'
+
+//head5
+const head5=document.createElement('h2')
+console.log(head5)
+head5.innerText='Ranveer Singh'
+head5.style.fontSize='30px'
+head5.style.paddingLeft='150px'
+
+//para5
+const para5=document.createElement('p')
+console.log(para5)
+para5.innerText='Ranveer Singh was born on 15 March 1993[3][4] in India.[5][6] She was born into the Bhatt family[7] to Indian film director Mahesh Bhatt and British actress Soni Razdan. Her father is of Gujarati descent[8][9] and her mother is of Kashmiri Pandit and British German ancestry.'
+
+
+div5.append(image5,head5,para5)
+
+
+
+
+
+
+
+
+
+
+
+</script>

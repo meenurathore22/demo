@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-size: 30px;
+        }
+        div{
+            display: flex;
+        }
+        button{
+            width: 50px;
+            height: 50px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+    <img src="./panipuri.jpg" alt="">
+    <h1>Order Panipuri</h1>
+    <button onclick="add()">+</button>
+    <br>
+    <span id="span">0</span>
+    <br>
+    <button onclick="minus()">-</button>
+</div>
+</body>
+</html>
+<script>
+    let count=0
+
+    function add(){
+     count++;
+     const spanvalue=document.getElementById('span') 
+     spanvalue.innerText=count  
+    }
+
+
+    function minus(){
+        count--;
+        const spanvalue=document.getElementById('span')
+        spanvalue.innerText=count
+    }
+</script>

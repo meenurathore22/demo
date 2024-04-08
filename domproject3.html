@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-size: 30px;
+        }
+       .div1{
+            display: flex;
+            border:3px solid rgb(204, 211, 218);
+            width: 800px;
+            height: 200px;
+            padding: 10px;
+            border-radius: 50px;
+        }
+        .div1:hover{
+            background-color: rgb(192, 188, 188);
+        }
+        button{
+            width: 50px;
+            height: 50px;
+        }
+       .box1 {
+            padding-left: 20px;
+            width: 300px;
+            height: 200px;
+
+        }
+        img{
+            width: 250px;
+            height: 200px;
+        }
+        img:hover{
+           border-radius: 50px;
+        }
+       .box2{
+            padding-top: 35px;
+            padding-left: 20px; 
+            width: 300px;
+            height: 200px; 
+        }
+        
+    .box3{
+        display: flex;
+        flex-direction: column;
+        margin-top: 35px;
+    }
+    span{
+        padding-left: 15px;
+    }
+    button:hover{
+        background-color: brown;
+    }
+    h1:hover{
+        font-family:monospace;
+        color:darkslategrey
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <div class="box1">
+            <img src="./biryani.jpg" alt="">
+        </div>
+           <div class="box2"> 
+              <h1>Chicken Biryani</h1>
+              <p style="font-size: 20px;">price-480</p>
+           </div>
+            <div class="box3">
+                <button onclick="add()">+</button>
+                <span id="inc">0</span>
+                <button onclick="minus()">-</button>
+            </div>
+    </div>
+    <br>
+    <div class="div1">
+        <div class="box1">
+            <img src="./burger.jpg" alt="">
+        </div>
+        <div class="box2">
+            <h1>Veg Burger</h1>
+                <p style="font-size: 20px;">price-450</p>
+        </div>
+        <div class="box3">
+            <button onclick="add1()">+</button>
+        <span id="inc1">0</span>
+        <button onclick="minus1()">-</button>
+        </div>
+        
+</div>
+<br>
+<div class="div1">
+    <div class="box1">
+        <img src="./idli.jpg" alt="">
+    </div>
+    <div class="box2">
+        <h1>Idli Sambhar</h1>
+        <p style="font-size: 20px;">price-300</p>
+        
+    </div>
+    <div class="box3">
+        <button onclick="add2()">+</button>
+    <span id="inc2">0</span>
+    <button onclick="minus2()">-</button>
+    </div>
+</div>
+    
+<br>
+<div class="div1">
+    <div class="box1">
+        <img src="./daal rice.jpg" alt="">
+    </div>
+    <div class="box2">
+        <h1>Daal Rice</h1>
+        <p style="font-size: 20px;"> price-350</p>
+    </div>
+    <div class="box3">
+        <button onclick="add3()">+</button>
+        <span id="inc3">0</span>
+        <button onclick="minus3()">-</button>
+    </div>
+</div>    
+    
+    
+    
+
+</body>
+</html>
+<script>
+    var count=0
+    function add(){
+        count++
+        const span1=document.getElementById('inc')
+        span1.innerText=count
+    }
+
+    function minus(){
+        count--
+        const span1=document.getElementById('inc')
+        span1.innerText=count
+    }
+
+    var count1=0
+    function add1(){
+        count1++
+        const span1=document.getElementById('inc1')
+        span1.innerText=count1
+    }
+
+    function minus1(){
+        count1--
+        const span1=document.getElementById('inc1')
+        span1.innerText=count1
+    }
+
+    var count2=0
+    function add2(){
+        count2++
+        const span1=document.getElementById('inc2')
+        span1.innerText=count2
+    }
+    function minus2(){
+        count2--
+        const span1=document.getElementById('inc2')
+        span1.innerText=count2
+    }
+
+    var count3=0
+    function add3(){
+        count3++
+        const span1=document.getElementById('inc3')
+        span1.innerText=count3
+    }
+    function minus3(){
+        count3--
+        const span1=document.getElementById('inc3')
+        span1.innerText=count3
+    }
+
+
+</script>
