@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.class1{
+    border: 2px solid;
+    background-color: rgb(8, 6, 6);
+    display:grid ;
+    grid-template-columns: 100px 100px 100px;
+    column-gap: 2px;
+    grid-template-rows: 100px 100px 100px;
+    row-gap: 2px;
+    width: 305px;
+}
+.class1>div{
+    background-color: brown;
+    border: 2px solid;
+    padding: 20px;
+}
+
+.class2{
+    background-color: blanchedalmond;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.class2>div{
+    background-color: brown;
+    border: 2px solid;
+    padding: 20px;
+}
+
+.class3{
+    background-color: blanchedalmond;
+    display: grid;
+    grid-template-columns: 120px 120px 120px 120px;
+    column-gap: 5px;
+    width: 500px;
+}
+.class3>div{
+    background-color: brown;
+    border: 2px solid;
+    padding: 20px;
+}
+
+.class4{
+    background-color: blanchedalmond;
+    display: grid;
+    grid-template-rows: 100px 100px 120px 120px;
+    width: 500px;
+}
+.class4>div{
+    background-color: brown;
+    border: 2px solid;
+    padding: 20px;
+}
+
+.class5{
+    background-color: blanchedalmond;
+    display: grid;
+    grid-template-rows: 100px 100px 120px 120px;
+    row-gap: 5px;
+    width: 500px;
+}
+.class5>div{
+    background-color: brown;
+    border: 2px solid;
+    padding: 20px;
+}
+.class6{
+    background-color: blanchedalmond;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    column-gap: 20px;
+    grid-template-rows: 100px 100px 200px 100px;
+    row-gap: 20px;
+    width: 500px;
+}
+.class6>div{
+    background-color: brown;
+    padding: 20px;
+    border: 2px solid;
+}
+    </style>
+</head>
+<body>
+   <div class="class1">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+   </div> 
+
+<h1>grid-template-columns</h1>
+   <div class="class2">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+   </div> 
+   
+   <h1>column-gap</h1>
+   <div class="class3">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+</div> 
+   
+   <h1>grid-template-rows</h1>
+   <div class="class4">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+</div>
+   
+   <h1>row-gap</h1>
+   <div class="class5">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+   </div> 
+<h1>grid-template-columns and rows/ column and row-gap</h1>
+   <div class="class6">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+   </div> 
+</body>
+</html>
