@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bigdiv{
+            display: flex;
+            width: 1200px;
+        }
+        .bigdiv:active{
+            background-color: darkgray;
+        }
+        .div1 {
+            width: 300px;
+        }
+        h1:hover{
+            font-family: cursive;
+            color: brown;
+        }
+        h2:hover{
+            font-style: italic;
+            color: blue;
+        }
+        h3:hover{
+            border: 1px solid;
+            border-radius: 15px;
+            font-size: 30px;
+            color: aqua;
+        }
+        h4:hover{
+            font-family: fantasy;
+        }
+        li:hover{
+            background-color: cadetblue;
+            border: 1px solid;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="bigdiv">
+
+        <div class="div1">
+            <h1>Variables</h1>
+            <h2>There are three type of variables. </h2>
+            <ol>
+                <li>Var</li>
+                <li>Let</li>
+                <li>Const</li>
+            </ol>
+            <h3>Var:</h3>
+            <h4>Var is a type of variable which can either be redeclared or reassigned</h4>
+            <ul>
+                <li>var a=10</li>
+                <li>a=20 // reassign</li>
+                <li>var a=30 // redeclared</li>
+            </ul>
+
+            <h3>Let:</h3>
+            <h4>Let is a type of variable which can only reassigned.</h4>
+            <ul>
+                <li>let a=10</li>
+                <li>a=20 // reassign</li>
+                <li>let a=30 // can not be redeclared</li>
+
+            </ul>
+
+            <h3>Const:</h3>
+            <h4>Var is a type of variable which can neithe be redeclared nor reassigned</h4>
+            <ul>
+                <li>var a=10</li>
+                <li>a=20 // neither reassign</li>
+                <li>var a=30 //nor redeclared</li>
+            </ul>
+        </div>
+        <hr>
+
+<div class="div1">
+        <h1>Two type Of Datatype </h1>
+  <h2>Primitive :<h3>In primitive datatype only single value is stored.</h3></h2>
+  <h4>Primitive are of five type</h4>
+  <ol>
+    <li>Number</li>
+    <li>String</li>
+    <li>Boolean</li>
+    <li>Undefiend</li>
+    <li>Null</li>
+</ol>
+  <h2>Non-Primitive :  <h3>In non-primitive datatype muliple value is stored. </h3></h2>
+<h4>Non-Primitive are of three type</h4>
+<ol>
+<li>Array</li>
+<li>Object</li>
+<li>Function</li>
+</ol>
+</div>
+<hr>
+
+ <div class="div1">
+    <h1>OPERATOR</h1>
+    <h2>Arithmetic Operator</h2>
+    <ol>
+        <li>Addition (+)</li>
+        <li>Subtraction(-)</li>
+        <li>Multiplication(*)</li>
+        <li>Division(\)</li>
+        <li>Module(%)</li>
+    </ol>
+
+    <h2>Logical Operator</h2>
+    <ol>
+        <li>AND</li>
+        <li>OR</li>
+        <li>NOT</li>
+ </ol>
+
+ <h2>Comparison Operator</h2>
+ <ol>
+    <li>Greater than(>)</li>
+    <li>less than(<)</li>
+    <li>Greater than or equal(>=)</li>
+    <li>less than or equal (<=)</li>
+    <li>Double equal(==)</li>
+    <li>not equal(!=)</li>
+    <li>Tripel equal(value and type)(===)</li>
+    <li>not equal value and type(!==)</li>
+</ol>
+
+<h2>Assignment Operator</h2>
+<ol>
+    <li>Equal to(=)</li>
+    <li>Add equal to(+=)</li>
+    <li>subtract equal to(-=)</li>
+    <li>multiply equal to(*=)</li>
+    <li>divide equal to(/=)</li>
+    <li>module equal to(%=)</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>
+
+<script>
+    console.log("Arithmetic Operator") 
+    let a=20
+    let b=30
+    console.log("sum of a and b is",a+b)
+    console.log("subtract of a and b is",a-b)
+    console.log("multiplication of a and b is",a*b)
+    console.log("division of a and b is",a/b)
+    console.log("module of a and b is",a%b)
+
+
+    console.log("Logical Operator")
+    a=true
+    b=false
+    console.log("AND Operator",a&&b,a&&a,b&&b,b&&a)
+    console.log("OR Operator",a||b,a||a,b||b,b||a)
+    console.log("NOT Operator",!a)
+    console.log("NOT Operator",!b)
+
+
+    console.log("Comparison Operator")
+    let c=20
+    let d=30
+    console.log("Less than",c<d)
+    console.log("Greater than",c>d)
+    console.log("less than or equal",c<=d)
+    console.log("Greater than or equal",c>=d)
+    console.log("double equal",c==d)
+    console.log("Triple equal value and type",c===d)
+    console.log("Not equal",c!=d)
+    console.log("Not equalvalue and type",c!==d)
+
+
+    console.log("assignment operator")
+    var w=10
+    var x=20
+    var y=30
+    var z=40
+    console.log("add equal:",w+=2,"----","subtract equal:",x-=12,"----","multiply equal:",y*=0,"----","divide equal:",z/=4)
+
+</script>

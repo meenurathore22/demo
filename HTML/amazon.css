@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    border:border-box
+}
+
+
+.navbar{
+    height:60px ;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.nav-logo{
+    height: 40px;
+    width: 40px;
+}
+img{
+    height: 50px;
+    width: 80px; 
+}
+.add1{
+    color: white;
+    margin-left: 15px;
+}
+.add2{
+    color: white;
+    display: flex;
+}
+.alogo{
+    color: white;
+}
+.search{
+    background-color: beige;
+    
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p:active{
+            color: blue;
+            font-family: cursive;
+            
+        }
+        button:hover{
+            color: white;
+            font-size: larger;
+            background-color: rgb(15, 12, 7);
+        }
+        h3:hover{
+            color: darkslategray;
+            font-family: cursive;
+        }
+        img:hover{
+            border: 5px solid;
+            
+        }
+        .class1{
+            display: flex;
+            margin: 150px;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        @media all and (min-width: 1024px){
+            .class1{
+                width:1300px;
+                height:600px;
+                background-color: rgb(239, 177, 96);
+            }
+            
+        }
+        @media all and (min-width: 768px) and (max-width:1023px){
+            .class1{
+                width:500px;
+                height:1000px;
+                background-color: rgb(239, 177, 96);
+            }
+        }
+        
+        
+        @media all and (min-width: 320px) and (max-width:767px){
+            .class1{
+                display: flex;
+                width:250px;
+                height:2060px;
+                background-color: rgb(239, 177, 96);
+            }
+        }
+        
+        .class1>div{
+            margin-top: 2px;
+            width: 180px;
+            height: 180px;
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="class1">
+        <div>
+            <img src="./animal.jpg" alt="animal movie">
+            <p>Animal is a 2023 Indian Hindi-language action drama film directed and edited by Sandeep Reddy Vanga, who also co-wrote the screenplay with Pranay Reddy Vanga and Saurabh Gupta. </p>
+            <h3>rate 917cr</h3>
+            <button>click</button>
+        </div> 
+        <div>
+            <img src="./dangal.jpg" alt="Dangal movie">
+            <p>Dangal (transl. "Wrestling Competition") is a 2016 Indian Hindi-language biographical sports drama film directed by Nitesh Tiwari and produced by Aamir Khan Company India. </p>
+            <h3>rate 2000cr</h3>
+            <button>click</button>
+        </div>
+        <div>
+            <img src="./lagaan.jpg" alt="Lagaan movie">
+            <p>Lagaan: Once Upon a Time in India (transl. Land tax) is a 2001 Indian Hindi-language period musical[5] sports drama film written and directed by Ashutosh Gowariker</p>
+            <h3>rate 659cr</h3>
+            <button>click</button>
+        </div>
+        <div>
+            <img src="./dora.jpg" alt="Dora movie">
+            <p>Dora is a 2017 Indian Tamil-language supernatural thriller film directed by Doss Ramasamy and produced by A. Sarkunam. </p>
+            <h3>rate 700cr</h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button>click</button>
+        </div>
+    </div>
+</body>
+</html>
